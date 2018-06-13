@@ -1,9 +1,7 @@
-using PATH2
-@static if VERSION < v"0.7.0-DEV.2005"
-    using Base.Test
-else
-    using Test
-end
+using PATHSolver
+using ForwardDiff
+using Base.Test
 
-# write your own tests here
-@test 1 == 2
+include("sparse_matrix.jl")
+include("lcp.jl")
+include("mcp.jl")
