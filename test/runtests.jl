@@ -1,4 +1,4 @@
-using PATHSolver
+using PATH2
 using ForwardDiff
 using Base.Test
 
