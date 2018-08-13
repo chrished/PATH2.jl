@@ -2,7 +2,7 @@ module PATH2
 
     using ForwardDiff
     using FunctionWrappers: FunctionWrapper
-
+    using SparseArrays
     if isfile(joinpath(dirname(dirname(@__FILE__)), "deps", "deps.jl"))
       include(joinpath(dirname(dirname(@__FILE__)), "deps", "deps.jl"))
     else
