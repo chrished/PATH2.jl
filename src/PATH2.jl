@@ -58,7 +58,7 @@ module PATH2
                Ptr{Cdouble}, Ptr{Cdouble},
                Ptr{Cdouble}, Ptr{Cdouble},
                Ptr{Ptr{Cchar}}, Ptr{Ptr{Cchar}},
-               Ptr{Void}, Ptr{Void}),
+               Ptr{Nothing}, Ptr{Nothing}),
                n, nnz, z, f, lb, ub, var_name, con_name, f_user_cb, j_user_cb)
 
       remove_option_file()
@@ -90,7 +90,7 @@ module PATH2
                Ptr{Cdouble}, Ptr{Cdouble},
                Ptr{Cdouble}, Ptr{Cdouble},
                Ptr{Ptr{Cchar}}, Ptr{Ptr{Cchar}},
-               Ptr{Void}, Ptr{Void}),
+               Ptr{Nothing}, Ptr{Nothing}),
                n, nnz, z, f, lb, ub, var_name, con_name, f_user_cb, j_user_cb)
       remove_option_file()
       return status[t], z, f

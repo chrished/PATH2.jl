@@ -1,0 +1,175 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   123    0   123    0     0    113      0 --:--:--  0:00:01 --:--:--   113
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0 39  493k   39  195k    0     0  63726      0  0:00:07  0:00:03  0:00:04   98k 72  493k   72  357k    0     0  88535      0  0:00:05  0:00:04  0:00:01  119k100  493k  100  493k    0     0   108k      0  0:00:04  0:00:04 --:--:--  144k
+if [ ! -d pathlib-4.7.03 ]; \
+then \
+	wget https://github.com/ampl/pathlib/archive/4.7.03.tar.gz; \
+	tar -zxvf 4.7.03.tar.gz; \
+	rm -rf 4.7.03.tar.gz*; \
+fi;
+--2018-08-13 10:28:55--  https://github.com/ampl/pathlib/archive/4.7.03.tar.gz
+Resolving github.com (github.com)... 192.30.253.112, 192.30.253.113
+Connecting to github.com (github.com)|192.30.253.112|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ampl/pathlib/tar.gz/4.7.03 [following]
+--2018-08-13 10:28:57--  https://codeload.github.com/ampl/pathlib/tar.gz/4.7.03
+Resolving codeload.github.com (codeload.github.com)... 192.30.253.120, 192.30.253.121
+Connecting to codeload.github.com (codeload.github.com)|192.30.253.120|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3840157 (3,7M) [application/x-gzip]
+Saving to: ‘4.7.03.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  1%  204K 18s
+    50K .......... .......... .......... .......... ..........  2%  185K 19s
+   100K .......... .......... .......... .......... ..........  3%  281K 17s
+   150K .......... .......... .......... .......... ..........  5%  215K 16s
+   200K .......... .......... .......... .......... ..........  6%  253K 16s
+   250K .......... .......... .......... .......... ..........  7%  373K 14s
+   300K .......... .......... .......... .......... ..........  9%  310K 14s
+   350K .......... .......... .......... .......... .......... 10%  418K 13s
+   400K .......... .......... .......... .......... .......... 11%  354K 12s
+   450K .......... .......... .......... .......... .......... 13%  282K 12s
+   500K .......... .......... .......... .......... .......... 14%  408K 12s
+   550K .......... .......... .......... .......... .......... 15%  243K 11s
+   600K .......... .......... .......... .......... .......... 17%  292K 11s
+   650K .......... .......... .......... .......... .......... 18%  412K 11s
+   700K .......... .......... .......... .......... .......... 19%  215K 11s
+   750K .......... .......... .......... .......... .......... 21%  350K 11s
+   800K .......... .......... .......... .......... .......... 22%  597K 10s
+   850K .......... .......... .......... .......... .......... 23%  517K 10s
+   900K .......... .......... .......... .......... .......... 25%  409K 9s
+   950K .......... .......... .......... .......... .......... 26%  281K 9s
+  1000K .......... .......... .......... .......... .......... 27%  466K 9s
+  1050K .......... .......... .......... .......... .......... 29%  485K 9s
+  1100K .......... .......... .......... .......... .......... 30%  573K 8s
+  1150K .......... .......... .......... .......... .......... 31%  308K 8s
+  1200K .......... .......... .......... .......... .......... 33%  436K 8s
+  1250K .......... .......... .......... .......... .......... 34%  518K 8s
+  1300K .......... .......... .......... .......... .......... 35%  569K 7s
+  1350K .......... .......... .......... .......... .......... 37%  453K 7s
+  1400K .......... .......... .......... .......... .......... 38%  308K 7s
+  1450K .......... .......... .......... .......... .......... 39%  474K 7s
+  1500K .......... .......... .......... .......... .......... 41%  299K 7s
+  1550K .......... .......... .......... .......... .......... 42%  327K 6s
+  1600K .......... .......... .......... .......... .......... 43%  577K 6s
+  1650K .......... .......... .......... .......... .......... 45%  535K 6s
+  1700K .......... .......... .......... .......... .......... 46%  582K 6s
+  1750K .......... .......... .......... .......... .......... 47%  847K 6s
+  1800K .......... .......... .......... .......... .......... 49%  496K 5s
+  1850K .......... .......... .......... .......... .......... 50%  518K 5s
+  1900K .......... .......... .......... .......... .......... 51%  463K 5s
+  1950K .......... .......... .......... .......... .......... 53% 45,7K 6s
+  2000K .......... .......... .......... .......... .......... 54%  321K 6s
+  2050K .......... .......... .......... .......... .......... 55%  449K 5s
+  2100K .......... .......... .......... .......... .......... 57%  578K 5s
+  2150K .......... .......... .......... .......... .......... 58%  559K 5s
+  2200K .......... .......... .......... .......... .......... 59%  594K 5s
+  2250K .......... .......... .......... .......... .......... 61%  479K 5s
+  2300K .......... .......... .......... .......... .......... 62%  414K 4s
+  2350K .......... .......... .......... .......... .......... 63%  451K 4s
+  2400K .......... .......... .......... .......... .......... 65%  472K 4s
+  2450K .......... .......... .......... .......... .......... 66%  756K 4s
+  2500K .......... .......... .......... .......... .......... 67%  598K 4s
+  2550K .......... .......... .......... .......... .......... 69%  422K 3s
+  2600K .......... .......... .......... .......... .......... 70%  161K 3s
+  2650K .......... .......... .......... .......... .......... 71%  269K 3s
+  2700K .......... .......... .......... .......... .......... 73%  318K 3s
+  2750K .......... .......... .......... .......... .......... 74%  304K 3s
+  2800K .......... .......... .......... .......... .......... 75%  410K 3s
+  2850K .......... .......... .......... .......... .......... 77%  406K 3s
+  2900K .......... .......... .......... .......... .......... 78%  264K 2s
+  2950K .......... .......... .......... .......... .......... 79%  206K 2s
+  3000K .......... .......... .......... .......... .......... 81%  341K 2s
+  3050K .......... .......... .......... .......... .......... 82%  473K 2s
+  3100K .......... .......... .......... .......... .......... 83%  472K 2s
+  3150K .......... .......... .......... .......... .......... 85%  328K 2s
+  3200K .......... .......... .......... .......... .......... 86%  348K 2s
+  3250K .......... .......... .......... .......... .......... 87%  448K 1s
+  3300K .......... .......... .......... .......... .......... 89% 83,6K 1s
+  3350K .......... .......... .......... .......... .......... 90% 18,3M 1s
+  3400K .......... .......... .......... .......... .......... 91%  200K 1s
+  3450K .......... .......... .......... .......... .......... 93%  285K 1s
+  3500K .......... .......... .......... .......... .......... 94%  459K 1s
+  3550K .......... .......... .......... .......... .......... 95%  442K 0s
+  3600K .......... .......... .......... .......... .......... 97%  583K 0s
+  3650K .......... .......... .......... .......... .......... 98%  684K 0s
+  3700K .......... .......... .......... .......... .......... 99%  563K 0s
+  3750K                                                       100%  292G=12s
+
+2018-08-13 10:29:09 (326 KB/s) - ‘4.7.03.tar.gz’ saved [3840157/3840157]
+
+pathlib-4.7.03/
+pathlib-4.7.03/LICENSE
+pathlib-4.7.03/README
+pathlib-4.7.03/doc/
+pathlib-4.7.03/doc/user.ps
+pathlib-4.7.03/examples/
+pathlib-4.7.03/examples/C/
+pathlib-4.7.03/examples/C/Makefile
+pathlib-4.7.03/examples/C/Standalone_Path.c
+pathlib-4.7.03/examples/C/Standalone_Path.h
+pathlib-4.7.03/examples/C/obstacle.c
+pathlib-4.7.03/examples/F90/
+pathlib-4.7.03/examples/F90/Install.h
+pathlib-4.7.03/examples/F90/Makefile
+pathlib-4.7.03/examples/F90/StandaloneF_Output.c
+pathlib-4.7.03/examples/F90/Standalone_Path.c
+pathlib-4.7.03/examples/F90/Standalone_Path.h
+pathlib-4.7.03/examples/F90/fout.f90
+pathlib-4.7.03/examples/F90/linmcp.f90
+pathlib-4.7.03/examples/F90/probdata.mod
+pathlib-4.7.03/examples/cpp/
+pathlib-4.7.03/examples/cpp/Makefile
+pathlib-4.7.03/examples/cpp/cWrapper_Path.cpp
+pathlib-4.7.03/examples/cpp/cWrapper_Path.hpp
+pathlib-4.7.03/examples/cpp/obstacle_c.cpp
+pathlib-4.7.03/include/
+pathlib-4.7.03/include/Config.h
+pathlib-4.7.03/include/Import.h
+pathlib-4.7.03/include/MCP_Interface.h
+pathlib-4.7.03/include/Macros.h
+pathlib-4.7.03/include/NLP_Interface.h
+pathlib-4.7.03/include/Options.h
+pathlib-4.7.03/include/Output.h
+pathlib-4.7.03/include/Output_Interface.h
+pathlib-4.7.03/include/Path.h
+pathlib-4.7.03/include/PathOptions.h
+pathlib-4.7.03/include/Presolve_Interface.h
+pathlib-4.7.03/include/Types.h
+pathlib-4.7.03/lib/
+pathlib-4.7.03/lib/linux32/
+pathlib-4.7.03/lib/linux32/libpath47.a
+pathlib-4.7.03/lib/linux32/libpath47.so
+pathlib-4.7.03/lib/linux64/
+pathlib-4.7.03/lib/linux64/libpath47.a
+pathlib-4.7.03/lib/linux64/libpath47.so
+pathlib-4.7.03/lib/osx/
+pathlib-4.7.03/lib/osx/libpath47.a
+pathlib-4.7.03/lib/osx/libpath47.dylib
+pathlib-4.7.03/lib/win32/
+pathlib-4.7.03/lib/win32/path47.dll
+pathlib-4.7.03/lib/win32/path47.lib
+pathlib-4.7.03/lib/win32/path47_static.lib
+pathlib-4.7.03/lib/win64/
+pathlib-4.7.03/lib/win64/path47.dll
+pathlib-4.7.03/lib/win64/path47.lib
+pathlib-4.7.03/lib/win64/path47_static.lib
+gcc -I./pathlib-4.7.03/include -m64 -shared -fPIC -Wl,-soname,libpath47julia.so -o libpath47julia.so pathjulia.c ./pathlib-4.7.03/lib/linux64/libpath47.a -lm
+mkdir -p ../lib/linux64
+cp libpath47julia.so ../lib/linux64/
+┌ Warning: `is_windows` is deprecated, use `Sys.iswindows` instead.
+│   caller = top-level scope at none:0
+└ @ Core none:0
+[ Info: Attempting to create directory /home/christoph/.julia/dev/PATH2/deps/downloads
+[ Info: Downloading file https://github.com/chkwon/PathJulia/archive/0.1.2.tar.gz
+[ Info: Done downloading file https://github.com/chkwon/PathJulia/archive/0.1.2.tar.gz
+[ Info: Attempting to create directory /home/christoph/.julia/dev/PATH2/deps/src
+[ Info: Attempting to create directory /home/christoph/.julia/dev/PATH2/deps
+[ Info: Directory /home/christoph/.julia/dev/PATH2/deps already exists
+[ Info: Attempting to create directory /home/christoph/.julia/dev/PATH2/deps/usr/lib
+[ Info: Changing directory to /home/christoph/.julia/dev/PATH2/deps/src/PathJulia-0.1.2/src
+[ Info: Changing directory to /home/christoph/.julia/dev/PATH2/deps/src/PathJulia-0.1.2/src
+┌ Warning: `is_windows` is deprecated, use `Sys.iswindows` instead.
+│   caller = top-level scope at none:0
+└ @ Core none:0

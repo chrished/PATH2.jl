@@ -1,6 +1,6 @@
 using PATH2
 using ForwardDiff
-using Base.Test
+using Test
 
 include("sparse_matrix.jl")
 include("lcp.jl")
