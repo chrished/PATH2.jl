@@ -51,8 +51,9 @@ module PATH2
       f = zeros(n)
 
       J0 = j_eval(z)
-      #nnz = count_nonzeros(J0)
-
+      if nnz == -1
+            nnz = count_nonzeros(J0)
+      end
       t = ccall( (:path_main, "libpath47julia"), Cint,
               (Cint, Cint,
                Ptr{Cdouble}, Ptr{Cdouble},
