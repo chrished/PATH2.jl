@@ -26,4 +26,7 @@ nnz2 = PATHSolver.count_nonzeros(Calculus.jacobian(resid, ones(L*2), :central))
 @test nnz2>nnz1
 
 jac(par) = Calculus.jacobian(resid, par, :central)
+# Calculus jacobian used
 status, zero, f_zero = solveMCP(resid, jac, lower, upper, guess)
+# ForwardDiff jacobian
+status, zero, f_zero = solveMCP(resid, lower, upper, guess)
